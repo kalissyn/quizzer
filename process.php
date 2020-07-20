@@ -4,6 +4,7 @@
 
 if( ! isset ($_SESSION['score'])){
         $_SESSION['score'] = 0;
+       
 }
 
 if($_POST){
@@ -36,10 +37,14 @@ if($_POST){
     $choice=$stmt->fetch();
  
     $correct_choice=$choice['id'];
+    
 
     if($correct_choice==$selected_choice  ){
         $_SESSION['score']++;
+     
+        
     }
+  
  
     if($number==$total){
         header("Location: final.php");
