@@ -18,6 +18,7 @@
             <p>Поздравляю, вы закончили тест!</p>
             <p>Правильных ответов: <?= $_SESSION['score'] ; ?></p>
             <a href="question.php?n=1" class="start">Начать заново</a>
+            <?php session_destroy(); ?>
         </div>
     </main>
 </body>
