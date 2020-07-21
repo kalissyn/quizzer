@@ -3,7 +3,7 @@
     $host = '127.0.0.1';
     $db   = 'quizzer';
     $user = 'admin';
-    $pass = 'password';
+    $pass = '1q2w3e4r';
     $charset = 'utf8';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
